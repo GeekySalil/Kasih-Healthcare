@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasih Health Care Centre | Advanced Women's Healthcare</title>
+    <meta name="description" content="Kasih Health Care Centre offers advanced healthcare, expert women's care services, and 24/7 medical support in Varanasi. Led by Dr. Shirin Ansari.">
+    <meta name="keywords" content="Health Care Centre in Varanasi, Gynecologist, Maternity, PCOD Treatment, Pregnancy Care, NABH Certified">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Kasih Health Care Centre | We Treat, God Heals">
+    <meta property="og:description" content="Premium healthcare with expert women's care services and 24/7 medical support in Varanasi.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGfvjXuIpXsWazBJsdbcvN9BuES9SjRGyu8HeY7PJ9kpYZxOpy6GsVt1UNZbL37hkrwBpbNNFdIqHdIE2UxyfrLF7uP9vh88y0HD9dI0enBxnHIQlqRKW9U-TcNCtPC37a-K3xq=s1360-w1360-h1020-rw">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons & Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hospital",
+      "name": "Kasih Health Care Centre",
+      "alternateName": "Kasih Hospital",
+      "image": "https://placehold.co/1200x600/1e3a8a/ffffff?text=Kasih+Health+Care+Centre",
+      "@id": "HOSP9P84629",
+      "url": "https://kasihhospital.com",
+      "telephone": "+918840021634",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dhamariya Pani Tanki, Lohta",
+        "addressLocality": "Varanasi",
+        "postalCode": "221107",
+        "addressRegion": "Uttar Pradesh",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "14:00"
+      }
+    }
+    </script>
+
+    <!-- Tailwind CSS Setup -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        medical: {
+                            primary: '#2563eb', // Blue 600
+                            dark: '#1e3a8a',   // Blue 900
+                            light: '#dbeafe',  // Blue 100
+                            accent: '#3b82f6', // Blue 500
+                        },
+                        accent: {
+                            red: '#ef4444',
+                            darkred: '#b91c1c',
+                            cyan: '#06b6d4',
+                            gold: '#fbbf24'
+                        }
+                    },
+                    boxShadow: {
+                        'premium': '0 20px 40px -15px rgba(37, 99, 235, 0.1)',
+                        'floating': '0 30px 60px -20px rgba(37, 99, 235, 0.25)',
+                        'glow': '0 0 25px rgba(37, 99, 235, 0.5)',
+                        'glow-red': '0 0 25px rgba(239, 68, 68, 0.6)',
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                        'blue-theme': 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #e0f2fe 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #eff6ff 0%, #e0f2fe 50%, #dbeafe 100%);
+            background-attachment: fixed;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .nav-scrolled { background: rgba(255, 255, 255, 0.95); box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08); }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Blobs */
+        .blob {
+            position: absolute;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.5;
+            animation: moveBlob 20s infinite alternate;
+        }
+        @keyframes moveBlob {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(60px, 40px) scale(1.2); }
+            100% { transform: translate(-40px, 60px) scale(0.8); }
+        }
+
+        /* Marquee */
+        .marquee-container {
+            overflow: hidden;
+            width: 100%;
+            white-space: nowrap;
+            position: relative;
+            padding: 20px 0;
+        }
+        .marquee-track {
+            display: inline-flex;
+            gap: 1.5rem;
+            animation: scroll-left 35s linear infinite;
+        }
+        .marquee-track.reverse { animation: scroll-right 35s linear infinite; }
+        .marquee-container:hover .marquee-track { animation-play-state: paused; }
+        
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        @keyframes scroll-right {
+            0% { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+        }
+        .marquee-img {
+            width: 320px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.1);
+            transition: all 0.4s ease;
+            border: 4px solid white;
+        }
+        .marquee-img:hover { transform: scale(1.05) translateY(-10px); cursor: pointer; box-shadow: 0 20px 35px rgba(37, 99, 235, 0.2); }
+
+        /* Accordion */
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+        }
+
+        /* Chatbot */
+        #chatbot-window { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); transform-origin: bottom left; }
+        .typing-indicator span {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: #2563eb;
+            border-radius: 50%;
+            margin: 0 2px;
+            animation: bounce 1.4s infinite ease-in-out both;
+        }
+        .typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
+        .typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
+        @keyframes bounce {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1); }
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #eff6ff; }
+        ::-webkit-scrollbar-thumb { background: #93c5fd; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
+
+        /* Service Cards Expand Animation */
+        .service-card { transition: all 0.3s ease; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px -15px rgba(37, 99, 235, 0.2); border-color: #60a5fa; }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased overflow-x-hidden relative">
+
+    <!-- Modal Overlay -->
+    <div id="modal-overlay" class="fixed inset-0 bg-medical-dark/80 z-[70] hidden backdrop-blur-md flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-3xl p-8 max-w-sm w-full mx-4 shadow-2xl transform scale-95 transition-transform duration-300 border border-blue-100" id="modal-content">
+            <div class="text-center">
+                <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 text-medical-primary text-4xl shadow-inner">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <h3 class="text-2xl font-heading font-bold text-gray-900 mb-3" id="modal-title">Success</h3>
+                <p class="text-gray-600 mb-8 leading-relaxed" id="modal-message">Action completed successfully.</p>
+                <button onclick="closeModal()" class="w-full bg-medical-primary text-white py-4 rounded-xl font-bold hover:bg-medical-dark transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <nav id="navbar" class="fixed w-full z-50 glass-nav transition-all duration-300 py-4">
+        <div class="max-w-[98%] xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Image Logo -->
+                <a href="#" class="flex items-center gap-3 group shrink-0">
+                    <img src="Images/logo.jpg" alt="Kasih Health Care Logo" class="h-10 w-10 lg:h-12 lg:w-12 object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform duration-300 border-2 border-white/80">
+                </a>
+
+                <!-- Desktop Menu (Responsive tight spacing for 10 items) -->
+                <div class="hidden lg:flex items-center lg:space-x-2 xl:space-x-5">
+                    <a href="https://sktechdevs.in/notices.html" class="text-[12px] xl:text-[13px] uppercase tracking-wider font-bold text-gray-700 hover:text-accent-red transition-colors">Notices</a>
+                    <a href="#about" class="text-[12px] xl:text-[13px] uppercase tracking-wider font-bold text-gray-700 hover:text-accent-red transition-colors">About</a>
+                    <a href="#services" class="text-[12px] xl:text-[13px] uppercase tracking-wider font-bold text-gray-700 hover:text-accent-red transition-colors">Services</a>
+                    <a href="#why-us" class="text-[12px] xl:text-[13px] uppercase tracking-wider font-bold text-gray-700 hover:text-accent-red transition-colors">Why Us</a>
+                    <a href="#doctor" class="text-[12px] xl:text-[13px] uppercase tracking-wider font-bold text-gray-700 hover:text-accent-red transition-colors">Doctor</a>
+                    <a href="#gallery" class="text-[12px] xl:text-[13px] uppercase tracking-wider font-bold text-gray-700 hover:text-accent-red transition-colors">Gallery</a>
+                    <a href="#testimonials" class="text-[12px] xl:text-[13px] uppercase tracking-wider font-bold text-gray-700 hover:text-accent-red transition-colors">Reviews</a>
+                    <a href="#payment" class="text-[12px] xl:text-[13px] uppercase tracking-wider font-bold text-gray-700 hover:text-accent-red transition-colors">Payment</a>
+                    <a href="#faq" class="text-[12px] xl:text-[13px] uppercase tracking-wider font-bold text-gray-700 hover:text-accent-red transition-colors">FAQ</a>
+                    <a href="#contact" class="text-[12px] xl:text-[13px] uppercase tracking-wider font-bold text-gray-700 hover:text-accent-red transition-colors">Contact</a>
+                </div>
+
+                <!-- Emergency Contact & Mobile Menu Btn -->
+                <div class="flex items-center gap-4 shrink-0">
+                    <div class="hidden md:flex items-center gap-3 bg-white/80 backdrop-blur-sm text-medical-dark px-4 py-2 rounded-full border border-blue-200 shadow-sm hover:shadow-md transition-shadow group cursor-pointer">
+                        <div class="w-8 h-8 rounded-full bg-accent-red text-white shadow-[0_0_15px_rgba(239,68,68,0.5)] flex items-center justify-center animate-pulse group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-[10px] text-accent-red font-bold uppercase leading-none">Emergency 24/7</span>
+                            <span class="font-extrabold text-sm leading-tight text-medical-dark">+91 88400 21634</span>
+                        </div>
+                    </div>
+                    <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 bg-white rounded-xl shadow-sm text-medical-dark hover:bg-blue-50 flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-bars-staggered text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-t border-blue-100 mt-4 shadow-2xl absolute w-full">
+            <div class="px-4 pt-4 pb-8 space-y-2 grid grid-cols-2 gap-x-4">
+                <a href="https://sktechdevs.in/notices.html" class="block px-4 py-3 rounded-xl text-sm font-bold text-gray-700 bg-blue-50 text-medical-primary border border-blue-100">Notices</a>
+                <a href="#about" class="block px-4 py-3 rounded-xl text-sm font-bold text-gray-700 hover:bg-blue-50 hover:text-accent-red">About</a>
+                <a href="#services" class="block px-4 py-3 rounded-xl text-sm font-bold text-gray-700 hover:bg-blue-50 hover:text-accent-red">Services</a>
+                <a href="#why-us" class="block px-4 py-3 rounded-xl text-sm font-bold text-gray-700 hover:bg-blue-50 hover:text-accent-red">Why Us</a>
+                <a href="#doctor" class="block px-4 py-3 rounded-xl text-sm font-bold text-gray-700 hover:bg-blue-50 hover:text-accent-red">Doctor</a>
+                <a href="#gallery" class="block px-4 py-3 rounded-xl text-sm font-bold text-gray-700 hover:bg-blue-50 hover:text-accent-red">Gallery</a>
+                <a href="#testimonials" class="block px-4 py-3 rounded-xl text-sm font-bold text-gray-700 hover:bg-blue-50 hover:text-accent-red">Reviews</a>
+                <a href="#payment" class="block px-4 py-3 rounded-xl text-sm font-bold text-gray-700 hover:bg-blue-50 hover:text-accent-red">Payment</a>
+                <a href="#faq" class="block px-4 py-3 rounded-xl text-sm font-bold text-gray-700 hover:bg-blue-50 hover:text-accent-red">FAQ</a>
+                <a href="#contact" class="block px-4 py-3 rounded-xl text-sm font-bold text-gray-700 hover:bg-blue-50 hover:text-accent-red">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden min-h-[100vh] flex items-center bg-[#0a0f24]">
+        <!-- Deep Blue Contrast Gradient -->
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900 via-[#0a0f24] to-black opacity-95"></div>
+        
+        <!-- Intense Background Blobs -->
+        <div class="blob bg-blue-600/30 w-[500px] h-[500px] rounded-full top-[-10%] left-[-10%] mix-blend-screen"></div>
+        <div class="blob bg-cyan-400/20 w-[600px] h-[600px] rounded-full bottom-[-20%] right-[-10%] mix-blend-screen" style="animation-delay: -5s;"></div>
+        <div class="blob bg-accent-red/20 w-[400px] h-[400px] rounded-full top-[20%] left-[40%] mix-blend-screen" style="animation-delay: -10s;"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Text Content -->
+                <div class="lg:col-span-7 relative z-20" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-accent-red/40 text-blue-50 text-sm font-bold mb-8 shadow-sm">
+                        <span class="relative flex h-3 w-3">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-red opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-3 w-3 bg-accent-red"></span>
+                        </span>
+                        <span class="tracking-wide">NABH Certified Healthcare Centre</span>
+                    </div>
+                    
+                    <h1 class="text-5xl lg:text-7xl xl:text-[80px] font-heading font-extrabold text-white leading-[1.05] mb-6 drop-shadow-2xl">
+                        We Treat,<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-white drop-shadow-sm">God Heals.</span>
+                    </h1>
+                    
+                    <p class="text-xl text-blue-100 mb-10 max-w-2xl leading-relaxed font-medium opacity-90 border-l-4 border-accent-red pl-4">
+                        Welcome to <strong class="text-white">Kasih Health Care Centre</strong>. We provide premium, advanced healthcare with expert women's care services and 24/7 medical support in Varanasi.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-5">
+                        <a href="#contact" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full font-bold shadow-[0_0_30px_rgba(37,99,235,0.4)] hover:-translate-y-1 hover:shadow-[0_0_45px_rgba(37,99,235,0.6)] transition-all duration-300 flex items-center gap-3 text-lg border border-blue-400">
+                            Book Appointment <i class="fa-solid fa-calendar-check"></i>
+                        </a>
+                        <a href="tel:+918840021634" class="px-8 py-4 bg-gradient-to-r from-accent-red to-accent-darkred text-white rounded-full font-bold shadow-glow-red hover:-translate-y-1 hover:shadow-[0_0_45px_rgba(239,68,68,0.8)] transition-all duration-300 flex items-center gap-3 text-lg border border-red-400">
+                            Call Now <i class="fa-solid fa-phone animate-pulse"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="mt-12 flex flex-wrap items-center gap-8 border-t border-blue-800 pt-8">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-shield-heart text-3xl text-accent-red"></i>
+                            <div class="flex flex-col">
+                                <span class="font-extrabold text-white">Empanelled</span>
+                                <span class="text-xs text-blue-200 font-semibold tracking-wider">M1, M7, S1, S4</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-clock text-3xl text-cyan-400"></i>
+                            <div class="flex flex-col">
+                                <span class="font-extrabold text-white">Daily OPD</span>
+                                <span class="text-xs text-blue-200 font-semibold tracking-wider">10:00 AM - 02:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Imagery (Spans 5 cols) -->
+                <div class="lg:col-span-5 relative" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
+                    <!-- Main Image Composition -->
+                    <div class="relative w-full aspect-[4/5] rounded-[3rem] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.8)] border-[8px] border-blue-500/20 backdrop-blur-sm z-10 transform transition-transform duration-700 hover:scale-[1.02]">
+                        <img src="Images/2.png" alt="Hospital Facility" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0f24] via-[#0a0f24]/40 to-transparent opacity-90"></div>
+                        <div class="absolute bottom-8 left-8 right-8 border-l-4 border-accent-red pl-4 bg-[#0a0f24]/60 p-4 rounded-xl backdrop-blur-md">
+                            <h3 class="text-white font-heading font-bold text-2xl mb-1">Premium Care Facility</h3>
+                            <p class="text-blue-200 text-sm font-medium">Equipped with modern medical technology.</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badges -->
+                    <div class="absolute -top-10 -left-10 lg:-left-16 bg-[#0a0f24]/90 backdrop-blur-xl p-5 rounded-3xl shadow-2xl flex items-center gap-4 border border-blue-500/30 z-20 animate-[bounce_4s_infinite]">
+                        <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-400 text-white rounded-2xl flex items-center justify-center text-2xl shadow-inner">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-blue-300 font-bold uppercase tracking-wider">Expert Care</p>
+                            <p class="text-2xl font-extrabold text-white">10+ Services</p>
+                        </div>
+                    </div>
+
+                    <div class="absolute -bottom-8 -right-4 lg:-right-12 bg-[#0a0f24]/90 backdrop-blur-xl p-5 rounded-3xl shadow-2xl flex items-center gap-4 border border-blue-500/30 z-20">
+                        <div class="flex -space-x-4">
+                            <img class="w-12 h-12 rounded-full border-4 border-[#0a0f24] object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100" alt="Patient">
+                            <img class="w-12 h-12 rounded-full border-4 border-[#0a0f24] object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100" alt="Patient">
+                            <div class="w-12 h-12 rounded-full border-4 border-[#0a0f24] bg-accent-red flex items-center justify-center text-sm font-bold text-white shadow-inner">+</div>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-extrabold text-white">1000+</p>
+                            <p class="text-xs text-blue-300 font-bold tracking-wider uppercase">Happy Patients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-12 bg-white/40 backdrop-blur-sm border-y border-blue-100/50">
+        <div class="text-center mb-8 px-4">
+            <h3 class="text-sm font-bold text-medical-primary uppercase tracking-widest mb-2">Facility Tour</h3>
+            <h2 class="text-3xl font-heading font-extrabold text-medical-dark">Experience Premium Healthcare</h2>
+        </div>
+        
+        <div class="marquee-container mb-6" dir="ltr">
+            <div class="marquee-track" id="track1">
+                <!-- Populated via JS -->
+            </div>
+        </div>
+        
+        <!-- <div class="marquee-container" dir="rtl">
+            <div class="marquee-track reverse" id="track2">
+            </div>
+        </div> -->
+    </section>
+
+    <section id="about" class="py-28 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 relative" data-aos="fade-right">
+                    <div class="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
+                        <img src="Images/1.png" alt="Kasih Health Care Building" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000" loading="lazy">
+                    </div>
+                    <!-- 24/7 Badge (Red accent) -->
+                    <div class="absolute top-1/2 -translate-y-1/2 -right-8 bg-white/95 backdrop-blur-md rounded-3xl shadow-xl p-6 border border-red-100">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-inner border border-red-100">
+                                <i class="fa-solid fa-clock text-4xl text-accent-red animate-pulse"></i>
+                            </div>
+                            <h4 class="font-extrabold text-medical-dark text-xl">24/7</h4>
+                            <p class="text-xs text-accent-red font-bold uppercase tracking-wider mt-1">Emergency Open</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2" data-aos="fade-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 text-green-700 font-bold text-xs uppercase tracking-widest mb-4">
+                        <i class="fa-solid fa-hospital"></i> About Us
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-heading font-extrabold text-medical-dark mb-6 leading-tight">Committed to Health, Dedicated to Care.</h2>
+                    
+                    <div class="space-y-6 text-lg text-gray-700 leading-relaxed font-medium">
+                        <p>
+                            At <strong class="text-medical-primary">Kasih Health Care Centre</strong>, we believe healthcare is more than just treatment. It is compassion, trust, and continuous support throughout your healing journey.
+                        </p>
+                        <p>
+                            Led by <strong class="text-medical-dark">Dr. Shirin Ansari</strong>, our mission is to provide premium quality healthcare with personalized attention for every patient. From comprehensive women's wellness to advanced maternity care and general medical consultations, we are deeply committed to helping families in Varanasi live healthier, happier lives.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 p-6 glass-card rounded-3xl border-blue-100 shadow-sm">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-red-500 to-rose-600 flex items-center justify-center text-white text-2xl shadow-md">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-medical-dark">NABH Certified</h4>
+                                <p class="text-sm text-gray-600 font-medium">Highest Quality Standards</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white text-2xl shadow-md">
+                                <i class="fa-solid fa-hand-holding-medical"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-medical-dark">Govt. Empanelled</h4>
+                                <p class="text-sm text-gray-600 font-medium">M1, M7, S1, S4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white/60 backdrop-blur-lg border-y border-white" id="why-us">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-medical-primary font-bold text-xs uppercase tracking-widest mb-4">
+                    <i class="fa-solid fa-star"></i> Kasih Advantage
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-heading font-extrabold text-medical-dark mb-6">Why Choose Us</h2>
+                <p class="text-lg text-gray-600 font-medium">We provide premium, certified healthcare focusing on patient well-being, safety, and modern medical practices.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <script>
+                    const features = [
+                        { icon: 'truck-medical', title: '24/7 Medical Support', desc: 'Round-the-clock emergency and routine care availability.', color: 'blue' },
+                        { icon: 'certificate', title: 'NABH Certified Care', desc: 'Recognized quality standards ensuring highest patient safety.', color: 'green' },
+                        { icon: 'person-pregnant', title: 'Expert Gynecology', desc: 'Specialized care for women\'s health issues by Dr. Shirin.', color: 'red' },
+                        { icon: 'baby-carriage', title: 'Pregnancy Care', desc: 'Comprehensive maternity, childbirth, and postnatal services.', color: 'blue' },
+                        { icon: 'user-doctor', title: 'Experienced Team', desc: 'Highly qualified doctors and trained nursing staff.', color: 'green' },
+                        { icon: 'microscope', title: 'Advanced Facilities', desc: 'Modern diagnostic equipment and hygienic operation theaters.', color: 'red' },
+                        { icon: 'hands-holding-child', title: 'Compassionate Care', desc: 'Personalized attention focusing on patient comfort.', color: 'blue' },
+                        { icon: 'shield-heart', title: 'Trusted Center', desc: 'Serving thousands of happy families in Varanasi.', color: 'green' }
+                    ];
+                    
+                    const colorMap = {
+                        'blue': { bg: 'bg-blue-50', text: 'text-blue-600', hoverBg: 'group-hover:bg-blue-600', hoverText: 'group-hover:text-blue-600' },
+                        'green': { bg: 'bg-green-50', text: 'text-green-600', hoverBg: 'group-hover:bg-green-600', hoverText: 'group-hover:text-green-600' },
+                        'red': { bg: 'bg-red-50', text: 'text-red-500', hoverBg: 'group-hover:bg-red-500', hoverText: 'group-hover:text-red-500' }
+                    };
+
+                    document.write(features.map((f, i) => {
+                        const c = colorMap[f.color];
+                        return `
+                        <div class="service-card group p-8 rounded-3xl bg-white border border-gray-100 shadow-sm" data-aos="fade-up" data-aos-delay="${(i%4)*100}">
+                            <div class="w-16 h-16 ${c.bg} rounded-2xl flex items-center justify-center text-3xl ${c.text} mb-6 ${c.hoverBg} group-hover:text-white transition-all duration-500 shadow-inner group-hover:shadow-glow group-hover:scale-110">
+                                <i class="fa-solid fa-${f.icon}"></i>
+                            </div>
+                            <h3 class="text-xl font-extrabold text-medical-dark mb-3 ${c.hoverText} transition-colors">${f.title}</h3>
+                            <p class="text-gray-600 font-medium leading-relaxed">${f.desc}</p>
+                        </div>
+                        `
+                    }).join(''));
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-28 bg-medical-dark relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900 via-medical-dark to-[#0f172a] opacity-90 -z-10"></div>
+        <div class="blob bg-medical-primary/20 w-[800px] h-[800px] rounded-full top-[-20%] left-[-20%] mix-blend-screen -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6" data-aos="fade-up">
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-900/50 border border-blue-700 text-green-400 font-bold text-xs uppercase tracking-widest mb-4 backdrop-blur-sm">
+                        <i class="fa-solid fa-stethoscope text-accent-red"></i> Clinical Specialties
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-heading font-extrabold text-white mb-6">Comprehensive Healthcare Services</h2>
+                    <p class="text-lg text-blue-100/80 font-medium leading-relaxed">Advanced diagnostic and treatment services focusing on women's health, maternity, and general wellness. We ensure precise diagnosis and compassionate care.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <script>
+                    const detailedServices = [
+                        { icon: 'droplet', title: 'Menstrual Problems', desc: 'Comprehensive diagnostic and management plans for irregular, heavy, or painful menstrual cycles, ensuring hormonal balance and long-term reproductive health.' },
+                        { icon: 'virus', title: 'PCOD Treatment', desc: 'Advanced lifestyle and medical management for Polycystic Ovarian Disease. We focus on treating the root cause, managing weight, and restoring natural ovulation cycles.' },
+                        { icon: 'disease', title: 'Fibroid Treatment', desc: 'Expert evaluation and treatment options for uterine fibroids, ranging from medical management to minimally invasive surgical procedures tailored to patient needs.' },
+                        { icon: 'shield-virus', title: 'STD Care', desc: 'Confidential, judgment-free testing, counseling, and complete treatment protocols for various sexually transmitted diseases to protect your health.' },
+                        { icon: 'capsules', title: 'Vaginal Infection', desc: 'Accurate diagnosis and effective treatment plans for recurrent yeast infections, bacterial vaginosis, and other related discomforts.' },
+                        { icon: 'restroom', title: 'UTI Treatment', desc: 'Prompt diagnosis and relief for Urinary Tract Infections. We provide targeted antibiotic therapy and preventive strategies for recurrent cases.' },
+                        { icon: 'seedling', title: 'Infertility Care', desc: 'Compassionate consultation, advanced fertility assessments, and guided medical interventions to help couples achieve their dream of parenthood.' },
+                        { icon: 'heart-pulse', title: 'Pregnancy Care', desc: 'End-to-end maternity care including regular trimester-wise monitoring, ultrasound evaluations, nutritional guidance, and high-risk pregnancy management.' },
+                        { icon: 'baby', title: 'Childbirth Services', desc: 'Safe, hygienic, and fully equipped labor and delivery facilities supporting both normal deliveries and Cesarean sections under expert medical supervision.' },
+                        { icon: 'pills', title: 'Contraception', desc: 'Personalized family planning advice. We offer a wide range of contraceptive options including pills, IUDs, injectables, and permanent sterilization.' },
+                        
+                        /* New Trauma & Emergency Services */
+                        { icon: 'user-doctor', title: 'Expert Trauma Surgeons', desc: 'Highly specialized trauma surgeons available around the clock for immediate critical injury management and life-saving surgical interventions.' },
+                        { icon: 'truck-medical', title: '24×7 Emergency Services', desc: 'Round-the-clock emergency medical care equipped with advanced life-saving technology to handle all critical and life-threatening situations immediately.' },
+                        { icon: 'truck-fast', title: 'Ambulance Facility', desc: 'Swift and fully-equipped 24/7 ambulance services ensuring safe, monitored, and rapid patient transport during medical emergencies.' },
+                        { icon: 'heart-circle-bolt', title: 'ECG Services', desc: 'Instant and highly accurate Electrocardiogram (ECG) testing for rapid assessment of cardiac emergencies and continuous heart health monitoring.' },
+                        { icon: 'x-ray', title: 'X-Ray Facility', desc: 'Advanced in-house digital X-Ray imaging providing quick, precise diagnostics of fractures, chest complications, and severe physical trauma.' },
+                        { icon: 'lungs', title: 'Oxygen Support', desc: '24/7 centralized high-flow oxygen support and advanced ventilator facilities for patients experiencing respiratory distress and critical care needs.' },
+                        { icon: 'bone', title: 'Fracture & Splinting', desc: 'Expert orthopedic care for severe bone fractures, including immediate splinting, advanced casting, and complex surgical corrections.' },
+                        { icon: 'head-side-medical', title: 'Head Injury Surgery', desc: 'Advanced neurosurgical interventions, continuous monitoring, and critical ICU care for severe head trauma and traumatic brain injuries.' }
+                    ];
+                    
+                    document.write(detailedServices.map((s, i) => `
+                        <div class="bg-[#1e3a8a]/40 backdrop-blur-md border border-[#2563eb]/30 p-8 rounded-[2rem] hover:bg-[#1e3a8a]/80 hover:border-cyan-400 transition-all duration-500 group cursor-default shadow-lg hover:shadow-[0_10px_40px_rgba(6,182,212,0.2)] hover:-translate-y-2 relative overflow-hidden" data-aos="fade-up" data-aos-delay="${(i%3)*100}">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-bl-full"></div>
+                            <div class="w-14 h-14 rounded-2xl bg-[#0f172a] border border-[#1e3a8a] flex items-center justify-center mb-6 group-hover:bg-cyan-400 group-hover:border-cyan-300 transition-colors duration-500 relative z-10 shadow-inner">
+                                <i class="fa-solid fa-${s.icon} text-2xl text-cyan-400 group-hover:text-medical-dark transition-colors"></i>
+                            </div>
+                            <h3 class="text-xl font-extrabold mb-4 text-white group-hover:text-cyan-50 relative z-10">${s.title}</h3>
+                            <p class="text-blue-100/70 group-hover:text-white leading-relaxed font-medium text-sm md:text-base relative z-10">${s.desc}</p>
+                        </div>
+                    `).join(''));
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <section id="doctor" class="py-28 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card rounded-[3rem] p-8 md:p-14 shadow-premium border border-blue-100 relative overflow-hidden" data-aos="zoom-in">
+                <!-- Decor -->
+                <div class="absolute top-0 right-0 w-96 h-96 bg-green-200 rounded-full blur-[100px] opacity-40 -translate-y-1/2 translate-x-1/4"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-center relative z-10">
+                    <div class="md:col-span-2 relative group">
+                        <div class="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl relative border-8 border-white">
+                            <img src="Images/7.png" alt="Dr. Shirin Ansari" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-medical-dark/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 bg-white p-5 rounded-3xl shadow-xl flex items-center gap-4 border border-blue-50">
+                            <div class="w-12 h-12 rounded-full bg-accent-gold/20 flex items-center justify-center">
+                                <i class="fa-solid fa-award text-2xl text-accent-gold"></i>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-extrabold text-medical-dark">10+ Yrs</p>
+                                <p class="text-xs text-gray-500 font-bold uppercase tracking-wider">Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:col-span-3 lg:pl-8">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-medical-primary font-bold text-xs uppercase tracking-widest mb-4">
+                            <i class="fa-solid fa-user-doctor"></i> Lead Specialist
+                        </div>
+                        <h2 class="text-4xl lg:text-5xl font-heading font-extrabold text-medical-dark mb-2">Dr. Shirin Ansari</h2>
+                        <p class="text-xl text-accent-red font-bold mb-6 pb-6 border-b border-blue-100/50">MBBS | Obstetrics & Gynecologist</p>
+                        
+                        <div class="space-y-4 text-gray-700 mb-8 font-medium leading-relaxed text-lg">
+                            <p>
+                                Dr. Shirin Ansari is a highly respected expert in women's healthcare, specializing in everything from routine gynecological care to complex pregnancies and infertility treatments.
+                            </p>
+                            <p>
+                                As the <strong>Former Medical Officer at Jamiya Hospital, Pili Kothi</strong>, she brings vast clinical experience, precise diagnostic skills, and profound compassion to every patient she treats at Kasih Health Care Centre.
+                            </p>
+                        </div>
+                        
+                        <ul class="space-y-4 mb-10 font-bold text-gray-800">
+                            <li class="flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600"><i class="fa-solid fa-check"></i></div> Expert in High-Risk Pregnancies</li>
+                            <li class="flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-500"><i class="fa-solid fa-check"></i></div> Specialist in Infertility & PCOD</li>
+                            <li class="flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600"><i class="fa-solid fa-check"></i></div> Compassionate Patient-First Approach</li>
+                        </ul>
+                        
+                        <div class="flex flex-wrap gap-4 items-center">
+                            <a href="#contact" class="px-8 py-4 bg-medical-dark text-white rounded-full font-bold hover:bg-medical-primary transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1 transform duration-300">Consult Doctor Now</a>
+                            <div class="flex gap-3">
+                                <a href="#" class="w-14 h-14 rounded-full bg-white border border-blue-100 flex items-center justify-center text-gray-600 hover:text-white hover:bg-medical-primary transition-all shadow-sm hover:-translate-y-1"><i class="fa-brands fa-linkedin-in text-xl"></i></a>
+                                <a href="#" class="w-14 h-14 rounded-full bg-white border border-blue-100 flex items-center justify-center text-gray-600 hover:text-white hover:bg-medical-primary transition-all shadow-sm hover:-translate-y-1"><i class="fa-solid fa-envelope text-xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white/40 backdrop-blur-sm border-y border-white" id="testimonials">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-medical-primary font-bold text-xs uppercase tracking-widest mb-4">
+                    <i class="fa-solid fa-comments text-accent-red"></i> Patient Stories
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-heading font-extrabold text-medical-dark mb-4">What Our Patients Say</h2>
+                <p class="text-lg text-gray-600 font-medium max-w-2xl mx-auto">Real experiences from families who trusted Kasih Health Care Centre for their medical needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-blue-50 hover:shadow-premium transition-all duration-300 hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex text-accent-gold mb-6 text-lg gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-700 mb-8 italic font-medium leading-relaxed text-lg">"Dr. Shirin explained everything clearly. The staff was very supportive during my entire treatment. best surgeon for hernia,hydrocele. Highly recommend for any issues."</p>
+                    <div class="flex items-center gap-4 mt-auto border-t border-blue-50 pt-6">
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600 font-extrabold text-xl">R</div>
+                        <div>
+                            <h4 class="font-extrabold text-medical-dark">Roshan Yadav</h4>
+                            <p class="text-xs text-gray-500 font-bold uppercase tracking-wider">Patient</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-premium border border-blue-100 hover:-translate-y-2 transition-all duration-300 relative top-0 md:-top-6 z-10" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -top-6 right-10 text-6xl text-blue-100 opacity-50"><i class="fa-solid fa-quote-right"></i></div>
+                    <div class="flex text-accent-gold mb-6 text-lg gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-700 mb-8 italic font-medium leading-relaxed text-lg">"Clean hospital and smooth experience. The 24/7 availability is a blessing. The maternity ward is well equipped, extremely hygienic, and the nurses are very caring."</p>
+                    <div class="flex items-center gap-4 mt-auto border-t border-blue-50 pt-6">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-extrabold text-xl">A</div>
+                        <div>
+                            <h4 class="font-extrabold text-medical-dark">Anjali Verma</h4>
+                            <p class="text-xs text-gray-500 font-bold uppercase tracking-wider">Maternity Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-blue-50 hover:shadow-premium transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex text-accent-gold mb-6 text-lg gap-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-700 mb-8 italic font-medium leading-relaxed text-lg">"Highly recommended healthcare services. Very professional approach by Dr. Shirin and reasonable consultation fees compared to other private hospitals in Varanasi."</p>
+                    <div class="flex items-center gap-4 mt-auto border-t border-blue-50 pt-6">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-extrabold text-xl">AP</div>
+                        <div>
+                            <h4 class="font-extrabold text-medical-dark">Amit Patel</h4>
+                            <p class="text-xs text-gray-500 font-bold uppercase tracking-wider">Local Guide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="payment" class="py-24 relative overflow-hidden bg-[#f8fafc]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-accent-red font-bold text-xs uppercase tracking-widest mb-4 border border-red-200">
+                    <i class="fa-solid fa-bolt"></i> Instant Digital Payment
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-heading font-extrabold text-medical-dark mb-4">UPI Payment Gateway</h2>
+                <p class="text-lg text-gray-600 font-medium mx-auto max-w-2xl">Securely pay your consultation fee or hospital bill directly using any trusted UPI application.</p>
+            </div>
+
+            <!-- Sleek Payment Card -->
+            <div class="bg-white rounded-[3rem] p-8 md:p-12 shadow-premium border-2 border-blue-50 relative overflow-hidden max-w-lg mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-medical-primary via-green-400 to-accent-red"></div>
+                <div class="absolute -top-32 -right-32 w-64 h-64 bg-blue-50 rounded-full -z-10 opacity-70 blur-3xl"></div>
+                
+                <!-- Step 1: Amount Entry -->
+                <div id="payment-step-1" class="transition-all duration-500 flex flex-col items-center">
+                    <div class="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mb-6 shadow-inner border border-blue-100">
+                        <i class="fa-solid fa-indian-rupee-sign text-3xl text-medical-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-medical-dark mb-2 text-center">Enter Payment Amount</h3>
+                    <p class="text-gray-500 font-medium mb-8 text-sm text-center">Enter the exact amount advised by the reception or doctor.</p>
+                    
+                    <div class="relative mb-8 group w-full">
+                        <div class="absolute inset-y-0 left-0 pl-6 flex items-center pointer-events-none">
+                            <span class="text-3xl font-extrabold text-gray-400 group-focus-within:text-medical-primary transition-colors">₹</span>
+                        </div>
+                        <input type="number" id="payment-amount" placeholder="0" class="block w-full pl-14 pr-6 py-5 text-4xl font-extrabold text-medical-dark bg-gray-50 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-blue-100 focus:border-medical-primary outline-none transition-all shadow-inner text-center">
+                    </div>
+
+                    <button id="proceed-btn" onclick="handleProceedToPay()" class="w-full flex justify-center items-center gap-3 py-5 bg-medical-dark text-white rounded-2xl font-bold text-lg hover:bg-medical-primary shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        Proceed to Pay <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <!-- Step 2: Payment Options & QR -->
+                <div id="payment-step-2" class="hidden flex-col items-center transition-all duration-500 w-full">
+                    <div class="w-full flex justify-between items-center mb-6 border-b border-gray-100 pb-4">
+                        <button onclick="resetPayment()" class="text-sm font-bold text-gray-400 hover:text-accent-red flex items-center gap-2 transition-colors px-3 py-2 rounded-lg hover:bg-red-50">
+                            <i class="fa-solid fa-arrow-left"></i> Edit
+                        </button>
+                        <!-- Official UPI Logo placeholder -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/UPI-Logo-vector.svg" alt="UPI" class="h-6 object-contain">
+                    </div>
+                    
+                    <h3 class="text-xl font-extrabold text-gray-500 mb-1 text-center uppercase tracking-wider">Amount to Pay</h3>
+                    <p class="font-extrabold text-medical-primary text-5xl mb-8 tracking-tight" id="final-amount-display">₹0</p>
+
+                    <div class="w-full space-y-4">
+                        <!-- Direct UPI App Link (Primary action) -->
+                        <a id="pay-via-app-btn" href="#" class="w-full py-5 bg-gradient-to-r from-medical-primary to-cyan-500 text-white rounded-2xl font-bold text-lg hover:shadow-glow transition-all transform hover:-translate-y-1 flex justify-center items-center gap-3 border border-blue-400">
+                            <i class="fa-solid fa-mobile-screen text-xl"></i> Open UPI Apps on Phone
+                        </a>
+                        
+                        <!-- Toggle QR Button -->
+                        <button onclick="toggleQR()" class="w-full py-4 bg-white border-2 border-blue-100 text-medical-dark rounded-2xl font-bold text-lg hover:border-medical-primary hover:bg-blue-50 transition-all flex justify-center items-center gap-3 shadow-sm">
+                            <i class="fa-solid fa-qrcode"></i> Scan QR Code Instead
+                        </button>
+                    </div>
+
+                    <!-- Hidden Dynamic QR Container -->
+                    <div id="qr-container" class="hidden w-full flex-col items-center mt-6 p-6 bg-gray-50 rounded-3xl border border-gray-200 shadow-inner transition-all">
+                        <p class="text-sm font-medium text-gray-500 mb-4 text-center">Scan with Google Pay, PhonePe, Paytm, etc.</p>
+                        <div class="bg-white p-4 rounded-2xl shadow-sm border border-blue-100 mb-5">
+                            <img id="dynamic-qr" src="" alt="Dynamic UPI QR Code" class="w-48 h-48">
+                        </div>
+                        <p class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Or Verify UPI ID</p>
+                        <div class="flex items-center gap-3 bg-white px-4 py-3 rounded-xl border border-gray-200 w-full justify-between shadow-sm">
+                            <span class="font-mono font-bold text-medical-dark truncate" id="upi-id">kasihhospital@ybl</span>
+                            <button onclick="copyUPI()" class="text-medical-primary hover:text-medical-dark bg-blue-50 p-2 rounded-lg transition-colors shrink-0 border border-blue-100" title="Copy UPI ID"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-white/60 backdrop-blur-lg border-y border-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-medical-primary font-bold text-xs uppercase tracking-widest mb-4">
+                    <i class="fa-solid fa-circle-question"></i> Help Center
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-heading font-extrabold text-medical-dark mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600 font-medium">Quick answers to common queries about our hospital and medical services.</p>
+            </div>
+            
+            <div class="space-y-4" id="faq-container">
+                <script>
+                    const faqs = [
+                        { q: "Is Kasih Health Care Centre open 24/7?", a: "Yes, we provide 24/7 emergency support. Our regular OPD timings are Monday to Sunday, 10:00 AM to 02:00 PM." },
+                        { q: "Do you provide pregnancy care?", a: "Yes, complete pregnancy and childbirth services are available. Dr. Shirin Ansari specializes in comprehensive maternity care including high-risk pregnancies." },
+                        { q: "Is appointment booking available online?", a: "Yes, patients can book appointments easily by filling out the contact form below, or by directly calling our reception." },
+                        { q: "Is emergency care available?", a: "Yes, emergency healthcare support is available round the clock with trained staff and necessary medical equipment ready at all times." },
+                        { q: "Is the centre NABH certified?", a: "Yes, our healthcare centre is NABH Entry-Level certified (Certificate No: PESHCO-2022-6812), which guarantees strict adherence to quality and hygiene standards." }
+                    ];
+
+                    document.write(faqs.map((faq, idx) => `
+                        <div class="bg-white rounded-3xl border border-blue-50 shadow-sm overflow-hidden transition-all hover:shadow-md" data-aos="fade-up" data-aos-delay="${idx*50}">
+                            <button class="faq-btn w-full px-8 py-6 text-left flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                                <span class="font-extrabold text-lg text-medical-dark pr-4">${faq.q}</span>
+                                <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center shrink-0 transition-transform duration-300 icon-wrapper border border-blue-100">
+                                    <i class="fa-solid fa-plus text-medical-primary"></i>
+                                </div>
+                            </button>
+                            <div class="faq-answer bg-blue-50/50 px-8">
+                                <p class="py-6 text-gray-600 font-medium text-lg border-t border-blue-100">${faq.a}</p>
+                            </div>
+                        </div>
+                    `).join(''));
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 relative overflow-hidden">
+        <div class="blob bg-medical-primary/10 w-[600px] h-[600px] rounded-full bottom-[-10%] right-[-10%] -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Map & Info -->
+                <div data-aos="fade-right">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-medical-primary font-bold text-xs uppercase tracking-widest mb-4">
+                        <i class="fa-solid fa-location-dot"></i> Reach Out
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-heading font-extrabold text-medical-dark mb-8">Visit Us</h2>
+                    
+                    <div class="glass-card rounded-[2rem] p-8 mb-8 border border-blue-100 flex items-start gap-6 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-medical-primary text-2xl shadow-sm shrink-0 border border-blue-50">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-extrabold text-xl text-medical-dark mb-2">Kasih Health Care Centre</h4>
+                            <p class="text-gray-600 font-medium leading-relaxed mb-3 text-lg">Dhamariya Pani Tanki, Lohta,<br>Varanasi – 221107,<br>Uttar Pradesh, India</p>
+                            <p class="text-sm font-bold text-medical-primary mb-4 bg-blue-50 inline-block px-3 py-1 rounded-lg border border-blue-100">Timings: Mon - Sun | 10:00 AM - 02:00 PM</p>
+                            <br>
+                            <a href="https://maps.google.com/?q=Dhamariya+Pani+Tanki,+Lohta,+Varanasi+221107" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-medical-dark text-white rounded-xl font-bold hover:bg-medical-primary transition-all shadow-md">
+                                Get Directions <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="rounded-[2.5rem] overflow-hidden shadow-xl h-[350px] bg-blue-50 border-8 border-white">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115403.04859065604!2d82.90906232655523!3d25.32074360340798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2c395a32ec5b%3A0xc00e12d4dd62b9a1!2sLohta%20Bazar%2C%20Varanasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white rounded-[3rem] p-8 md:p-12 shadow-premium border border-blue-50" data-aos="fade-left">
+                    <h3 class="text-3xl font-heading font-extrabold text-medical-dark mb-3">Book an Appointment</h3>
+                    <p class="text-gray-500 font-medium mb-8 text-lg">Fill out the form below and our front desk will contact you to confirm.</p>
+                    
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wider">Full Name *</label>
+                            <input type="text" required class="w-full px-5 py-4 bg-blue-50/50 rounded-2xl border border-blue-100 focus:border-medical-primary focus:ring-4 focus:ring-medical-primary/10 outline-none transition-all font-medium text-gray-800" placeholder="John Doe">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wider">Phone Number *</label>
+                                <input type="tel" required pattern="[0-9]{10}" class="w-full px-5 py-4 bg-blue-50/50 rounded-2xl border border-blue-100 focus:border-medical-primary focus:ring-4 focus:ring-medical-primary/10 outline-none transition-all font-medium text-gray-800" placeholder="10-digit number">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wider">Email (Optional)</label>
+                                <input type="email" class="w-full px-5 py-4 bg-blue-50/50 rounded-2xl border border-blue-100 focus:border-medical-primary focus:ring-4 focus:ring-medical-primary/10 outline-none transition-all font-medium text-gray-800" placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wider">Reason for visit *</label>
+                            <textarea required rows="4" class="w-full px-5 py-4 bg-blue-50/50 rounded-2xl border border-blue-100 focus:border-medical-primary focus:ring-4 focus:ring-medical-primary/10 outline-none transition-all resize-none font-medium text-gray-800" placeholder="Briefly describe your health issue or specify Dr. Shirin..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-5 bg-gradient-to-r from-medical-primary to-cyan-500 text-white rounded-2xl font-bold text-lg hover:shadow-glow hover:-translate-y-1 transition-all duration-300 flex justify-center items-center gap-3 group border border-blue-400">
+                            <span id="btn-text">Confirm Booking</span>
+                            <i id="btn-icon" class="fa-solid fa-paper-plane group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                            <i id="btn-loader" class="fa-solid fa-circle-notch fa-spin hidden"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0f172a] text-blue-100 pt-20 pb-8 relative border-t-[8px] border-medical-primary overflow-hidden">
+        <div class="absolute top-0 right-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+CjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0ibm9uZSI+PC9yZWN0Pgo8Y2lyY2xlIGN4PSIyIiBjeT0iMiIgcj0iMSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSI+PC9jaXJjbGU+Cjwvc3ZnPg==')] opacity-50 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Col 1 -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-medical-primary text-2xl shadow-lg border border-blue-200">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h2 class="font-heading font-extrabold text-2xl text-white">Kasih Health Care</h2>
+                    </div>
+                    <p class="text-sm mb-6 leading-relaxed text-blue-200/80 font-medium">Premium advanced healthcare with expert women's care services in Varanasi. "We Treat, God Heals."</p>
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-900/50 border border-blue-700 text-xs font-bold text-white mb-6">
+                        <i class="fa-solid fa-certificate text-accent-gold"></i> NABH Entry Level Certified
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-white font-extrabold mb-6 uppercase tracking-widest text-sm">Quick Links</h4>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li><a href="#about" class="hover:text-white flex items-center gap-2 transition-colors"><i class="fa-solid fa-angle-right text-cyan-500"></i> About Hospital</a></li>
+                        <li><a href="#services" class="hover:text-white flex items-center gap-2 transition-colors"><i class="fa-solid fa-angle-right text-cyan-500"></i> Our Services</a></li>
+                        <li><a href="#doctor" class="hover:text-white flex items-center gap-2 transition-colors"><i class="fa-solid fa-angle-right text-cyan-500"></i> Lead Doctor</a></li>
+                        <li><a href="#payment" class="hover:text-white flex items-center gap-2 transition-colors"><i class="fa-solid fa-angle-right text-cyan-500"></i> Make Payment</a></li>
+                        <li><a href="#faq" class="hover:text-white flex items-center gap-2 transition-colors"><i class="fa-solid fa-angle-right text-cyan-500"></i> FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-white font-extrabold mb-6 uppercase tracking-widest text-sm">Contact Info</h4>
+                    <ul class="space-y-5 text-sm font-medium">
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center shrink-0 text-cyan-400"><i class="fa-solid fa-location-dot"></i></div>
+                            <span class="mt-1">Dhamariya Pani Tanki, Lohta,<br>Varanasi – 221107, UP</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center shrink-0 text-cyan-400"><i class="fa-solid fa-phone"></i></div>
+                            <span class="text-lg text-white font-bold">+91 88400 21634</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center shrink-0 text-cyan-400"><i class="fa-solid fa-envelope"></i></div>
+                            <span>contact@kasihhospital.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="text-white font-extrabold mb-6 uppercase tracking-widest text-sm">Availability</h4>
+                    <div class="bg-[#1e3a8a]/40 p-5 rounded-2xl border border-blue-800 mb-6 backdrop-blur-sm">
+                        <p class="flex justify-between text-sm mb-3 font-medium text-blue-200"><span>Mon - Sun</span><span class="font-bold text-white bg-blue-800 px-2 py-1 rounded text-xs border border-blue-600">10:00 AM - 02:00 PM</span></p>
+                        <p class="flex justify-between text-sm text-cyan-400 font-extrabold border-t border-blue-800/50 pt-3 mt-3"><span>Emergency Care</span><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-accent-red animate-pulse block"></span> 24/7 Open</span></p>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-12 h-12 rounded-full bg-blue-900 flex items-center justify-center hover:bg-medical-primary hover:text-white transition-all border border-blue-800"><i class="fa-brands fa-facebook-f text-lg"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-blue-900 flex items-center justify-center hover:bg-medical-primary hover:text-white transition-all border border-blue-800"><i class="fa-brands fa-instagram text-lg"></i></a>
+                        <a href="https://wa.me/918840021634" target="_blank" class="w-12 h-12 rounded-full bg-blue-900 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-all border border-blue-800"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-blue-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-blue-500 font-bold uppercase tracking-wider">
+                <p>&copy; 2026 Kasih Health Care Centre. All Rights Reserved.</p>
+                <p>Hospital ID: HOSP9P84629</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- WhatsApp Floating CTA (Right Corner) -->
+    <a href="https://wa.me/918840021634" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 bg-[#25D366] text-white rounded-full shadow-[0_0_20px_rgba(37,211,102,0.5)] flex items-center justify-center text-4xl hover:scale-110 transition-all z-50 border-2 border-white group" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Chatbot Toggle Button (Left Corner) -->
+    <button id="chatbot-toggle" class="fixed bottom-6 left-6 w-16 h-16 bg-medical-dark text-white rounded-full shadow-glow flex items-center justify-center text-3xl hover:bg-medical-primary hover:scale-110 transition-all z-50 border-2 border-white group">
+        <i class="fa-solid fa-robot group-hover:animate-bounce"></i>
+    </button>
+
+    <!-- Chatbot Window (Left Corner) -->
+    <div id="chatbot-window" class="fixed bottom-28 left-6 w-80 sm:w-96 bg-white/85 backdrop-blur-xl rounded-3xl shadow-2xl border border-blue-100/50 z-50 flex flex-col overflow-hidden opacity-0 pointer-events-none scale-90">
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-medical-dark to-medical-primary p-5 text-white flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center border border-white/30 backdrop-blur-sm">
+                    <i class="fa-solid fa-robot text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-extrabold text-base">Kasih AI Assistant</h4>
+                    <p class="text-xs text-blue-100 flex items-center gap-1 font-medium mt-0.5"><span class="w-2 h-2 rounded-full bg-green-400 block animate-pulse"></span> Online Support</p>
+                </div>
+            </div>
+            <button id="chatbot-close" class="text-white/80 hover:text-white bg-black/10 w-8 h-8 rounded-full flex items-center justify-center transition-colors"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+        <!-- Messages Area -->
+        <div id="chatbot-messages" class="flex-1 h-[350px] p-5 overflow-y-auto bg-slate-50/50 flex flex-col gap-4 text-sm font-medium">
+            <!-- Initial Greeting -->
+            <div class="bg-white p-4 rounded-2xl rounded-tl-sm shadow-sm max-w-[85%] self-start border border-blue-50 text-gray-700 leading-relaxed">
+                Hello! Welcome to Kasih Health Care Centre. I am here to help you. What information are you looking for?
+            </div>
+            <!-- Quick Actions -->
+            <div class="flex flex-wrap gap-2 mt-1">
+                <button class="chat-quick-btn px-4 py-2 bg-blue-50 text-medical-primary border border-blue-200 rounded-full text-xs font-bold hover:bg-blue-100 transition-colors shadow-sm">Timings?</button>
+                <button class="chat-quick-btn px-4 py-2 bg-blue-50 text-medical-primary border border-blue-200 rounded-full text-xs font-bold hover:bg-blue-100 transition-colors shadow-sm">Doctor details</button>
+                <button class="chat-quick-btn px-4 py-2 bg-blue-50 text-medical-primary border border-blue-200 rounded-full text-xs font-bold hover:bg-blue-100 transition-colors shadow-sm">Book appointment</button>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="p-4 bg-white border-t border-blue-50 flex items-center gap-3">
+            <input type="text" id="chatbot-input" placeholder="Ask about timings, location..." class="flex-1 px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:border-medical-primary focus:ring-2 focus:ring-medical-primary/20 text-sm font-medium transition-all">
+            <button id="chatbot-send" class="w-12 h-12 bg-medical-dark text-white rounded-xl flex items-center justify-center hover:bg-medical-primary transition-colors shrink-0 shadow-md">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Initialize AOS animations
+        AOS.init({ once: true, offset: 50, duration: 800 });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('nav-scrolled');
+                navbar.classList.remove('py-4');
+                navbar.classList.add('py-2');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+                navbar.classList.add('py-4');
+                navbar.classList.remove('py-2');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // Setup Infinite Marquee Images
+        const mImages = [
+            'images/logo.jpg',
+            'images/3.png',
+            'images/4.png',
+            'images/5.png',
+            'images/6.png',
+            'images/8.png'
+        ];
+
+        function populateMarquee(trackId, imgs, reverse = false) {
+            const track = document.getElementById(trackId);
+            const array = reverse ? [...imgs].reverse() : imgs;
+            const fullArray = [...array, ...array, ...array, ...array]; 
+            track.innerHTML = fullArray.map(src => `<img src="${src}" class="marquee-img" alt="Hospital Facility" loading="lazy">`).join('');
+        }
+        
+        populateMarquee('track1', mImages);
+        populateMarquee('track2', mImages, true);
+
+        // FAQ Accordion Logic
+        function toggleFaq(btn) {
+            const answer = btn.nextElementSibling;
+            const iconWrapper = btn.querySelector('.icon-wrapper');
+            const icon = iconWrapper.querySelector('i');
+            
+            document.querySelectorAll('.faq-answer').forEach(el => {
+                if(el !== answer) {
+                    el.style.maxHeight = null;
+                    const otherBtn = el.previousElementSibling;
+                    otherBtn.querySelector('.icon-wrapper').classList.remove('bg-medical-primary');
+                    otherBtn.querySelector('.icon-wrapper').classList.add('bg-blue-50');
+                    otherBtn.querySelector('i').classList.remove('fa-minus', 'text-white');
+                    otherBtn.querySelector('i').classList.add('fa-plus', 'text-medical-primary');
+                }
+            });
+
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                iconWrapper.classList.remove('bg-medical-primary');
+                iconWrapper.classList.add('bg-blue-50');
+                icon.classList.remove('fa-minus', 'text-white');
+                icon.classList.add('fa-plus', 'text-medical-primary');
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                iconWrapper.classList.add('bg-medical-primary');
+                iconWrapper.classList.remove('bg-blue-50');
+                icon.classList.add('fa-minus', 'text-white');
+                icon.classList.remove('fa-plus', 'text-medical-primary');
+            }
+        }
+
+        // Custom Modal Logic
+        const modalOverlay = document.getElementById('modal-overlay');
+        const modalContent = document.getElementById('modal-content');
+        const modalTitle = document.getElementById('modal-title');
+        const modalMessage = document.getElementById('modal-message');
+
+        function showModal(title, message) {
+            modalTitle.innerText = title;
+            modalMessage.innerText = message;
+            modalOverlay.classList.remove('hidden');
+            setTimeout(() => {
+                modalOverlay.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            modalOverlay.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                modalOverlay.classList.add('hidden');
+            }, 300);
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const btnText = document.getElementById('btn-text');
+            const btnIcon = document.getElementById('btn-icon');
+            const btnLoader = document.getElementById('btn-loader');
+            
+            btnText.innerText = "Processing...";
+            btnIcon.classList.add('hidden');
+            btnLoader.classList.remove('hidden');
+            
+            setTimeout(() => {
+                showModal('Request Sent Successfully', 'Thank you! Our reception desk will contact you shortly to confirm your booking at Kasih Health Care Centre.');
+                document.getElementById('contactForm').reset();
+                
+                btnText.innerText = "Confirm Booking";
+                btnIcon.classList.remove('hidden');
+                btnLoader.classList.add('hidden');
+            }, 1500);
+        }
+
+        // Advanced UPI Logic
+        function handleProceedToPay() {
+            const amountInput = document.getElementById('payment-amount').value;
+            if (!amountInput || amountInput <= 0) {
+                showModal('Invalid Amount', 'Please enter a valid payment amount to proceed.');
+                return;
+            }
+
+            const upiId = "kasihhospital@ybl";
+            const name = "Kasih Health Care Centre";
+            const upiString = `upi://pay?pa=${upiId}&pn=${encodeURIComponent(name)}&cu=INR&am=${amountInput}`;
+
+            document.getElementById('final-amount-display').innerText = `₹${amountInput}`;
+            document.getElementById('pay-via-app-btn').href = upiString;
+            
+            const qrImg = document.getElementById('dynamic-qr');
+            qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(upiString)}`;
+
+            document.getElementById('payment-step-1').classList.add('hidden');
+            document.getElementById('payment-step-1').classList.remove('flex');
+            document.getElementById('payment-step-2').classList.remove('hidden');
+            document.getElementById('payment-step-2').classList.add('flex');
+        }
+
+        function toggleQR() {
+            const qrCont = document.getElementById('qr-container');
+            if (qrCont.classList.contains('hidden')) {
+                qrCont.classList.remove('hidden');
+                qrCont.classList.add('flex');
+                // Scroll slightly so the user sees the QR
+                setTimeout(() => {
+                    qrCont.scrollIntoView({behavior: 'smooth', block: 'nearest'});
+                }, 100);
+            } else {
+                qrCont.classList.add('hidden');
+                qrCont.classList.remove('flex');
+            }
+        }
+
+        function resetPayment() {
+            document.getElementById('payment-step-2').classList.add('hidden');
+            document.getElementById('payment-step-2').classList.remove('flex');
+            document.getElementById('payment-step-1').classList.remove('hidden');
+            document.getElementById('payment-step-1').classList.add('flex');
+            
+            const qrCont = document.getElementById('qr-container');
+            qrCont.classList.add('hidden');
+            qrCont.classList.remove('flex');
+        }
+
+        function copyUPI() {
+            const upi = document.getElementById('upi-id').innerText;
+            try {
+                const textArea = document.createElement("textarea");
+                textArea.value = upi;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand("copy");
+                textArea.remove();
+                
+                showModal('UPI ID Copied', `Successfully copied: ${upi}\nYou can now paste this in any UPI App.`);
+            } catch (err) {
+                console.error('Failed to copy', err);
+            }
+        }
+
+        // --- RegEx Powered AI Chatbot Logic ---
+        const chatToggle = document.getElementById('chatbot-toggle');
+        const chatWindow = document.getElementById('chatbot-window');
+        const chatClose = document.getElementById('chatbot-close');
+        const chatInput = document.getElementById('chatbot-input');
+        const chatSend = document.getElementById('chatbot-send');
+        const chatMessages = document.getElementById('chatbot-messages');
+
+        let isChatOpen = false;
+
+        function toggleChat() {
+            isChatOpen = !isChatOpen;
+            if (isChatOpen) {
+                chatWindow.classList.remove('opacity-0', 'pointer-events-none', 'scale-90');
+                chatInput.focus();
+            } else {
+                chatWindow.classList.add('opacity-0', 'pointer-events-none', 'scale-90');
+            }
+        }
+
+        chatToggle.addEventListener('click', toggleChat);
+        chatClose.addEventListener('click', toggleChat);
+
+        // Smart rules using regex patterns for broader query comprehension
+        const botRules = [
+            { pattern: /(timing|time|open|hour|clock|when|schedule)/i, reply: "Our OPD timings are Monday to Sunday, 10:00 AM to 02:00 PM. However, Emergency & Trauma services are available 24/7." },
+            { pattern: /(whatsapp|chat|message|reach)/i, reply: "You can chat with us directly on WhatsApp at +91 88400 21634, or use the green WhatsApp button on the bottom right corner of the website." },
+            { pattern: /(where|location|address|map|direction|situated)/i, reply: "We are located at Dhamariya Pani Tanki, Lohta, Varanasi – 221107, UP. You can find our exact location on Google Maps in the 'Contact' section." },
+            { pattern: /(service|treatment|offer|pcod|maternity|pregnancy|infection|what do you do|specialty|trauma|emergency|ambulance|x-ray|ecg|oxygen|fracture|bone)/i, reply: "We offer comprehensive Women's Healthcare, as well as 24/7 Trauma & Emergency Care including Ambulance, ECG, X-Ray, Oxygen support, and Surgery. Please check our Services section for a full list." },
+            { pattern: /(doctor|shirin|ansari|gynecologist|who|specialist)/i, reply: "Dr. Shirin Ansari is our Lead Specialist. She is a highly experienced MBBS & Obstetrics & Gynecologist, formerly a Medical Officer at Jamiya Hospital." },
+            { pattern: /(emergency|urgent|immediate)/i, reply: "Yes! We provide 24/7 healthcare services and emergency medical support. Please call us immediately at +91 88400 21634." },
+            { pattern: /(contact|phone|call|number)/i, reply: "You can call us directly at +91 88400 21634 for any inquiries or emergencies." },
+            { pattern: /(book|appointment|consultation|visit|see)/i, reply: "You can easily book an appointment by filling out the form at the bottom of our website, or by calling our reception desk at +91 88400 21634." },
+            { pattern: /(nabh|certificate|certified|quality|trust)/i, reply: "Yes, Kasih Health Care Centre is a proud NABH Entry-Level Certified facility (Certificate No: PESHCO-2022-6812), ensuring the highest quality standards." },
+            { pattern: /(payment|pay|upi|fee|cost|bill|qr)/i, reply: "You can securely pay consultation or hospital fees using our UPI payment section on the website. Enter the amount and you can scan the QR code or pay directly via apps." },
+            { pattern: /(hi|hello|hey|greetings|namaste)/i, reply: "Hello! Welcome to Kasih Health Care Centre. How can I assist you with your health needs today?" }
+        ];
+
+        function addMessage(text, isUser = false) {
+            const div = document.createElement('div');
+            div.className = `p-4 rounded-2xl shadow-sm max-w-[85%] text-sm font-medium leading-relaxed ${isUser ? 'bg-medical-dark text-white rounded-tr-sm self-end' : 'bg-white border border-blue-50 text-gray-700 rounded-tl-sm self-start'}`;
+            div.innerText = text;
+            chatMessages.appendChild(div);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function addTypingIndicator() {
+            const div = document.createElement('div');
+            div.id = 'typing-indicator';
+            div.className = 'typing-indicator bg-white p-4 rounded-2xl rounded-tl-sm shadow-sm max-w-[85%] self-start border border-blue-50 text-gray-700 flex items-center h-12';
+            div.innerHTML = '<span></span><span></span><span></span>';
+            chatMessages.appendChild(div);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function removeTypingIndicator() {
+            const indicator = document.getElementById('typing-indicator');
+            if(indicator) indicator.remove();
+        }
+
+        function getBotResponse(input) {
+            // Test input against all Regex patterns
+            for (let rule of botRules) {
+                if (rule.pattern.test(input)) {
+                    return rule.reply;
+                }
+            }
+            return "I am a virtual assistant. For specific medical queries or to book an appointment, please contact us directly at +91 88400 21634 or via WhatsApp.";
+        }
+
+        function handleChatSubmit() {
+            const text = chatInput.value.trim();
+            if (!text) return;
+            
+            // Hide quick actions for a cleaner chat flow
+            const quickActions = document.querySelector('#chatbot-messages .flex-wrap');
+            if(quickActions) quickActions.style.display = 'none';
+
+            addMessage(text, true);
+            chatInput.value = '';
+            
+            addTypingIndicator();
+            
+            setTimeout(() => {
+                removeTypingIndicator();
+                addMessage(getBotResponse(text));
+            }, 800 + Math.random() * 800); // Random delay to mimic typing (800ms - 1600ms)
+        }
+
+        chatSend.addEventListener('click', handleChatSubmit);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') handleChatSubmit();
+        });
+
+        document.querySelectorAll('.chat-quick-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                chatInput.value = btn.innerText;
+                handleChatSubmit();
+            });
+        });
+
+    </script>
+</body>
+</html>
